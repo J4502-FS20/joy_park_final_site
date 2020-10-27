@@ -14,14 +14,11 @@
 
 <body>
 
-  <div class="navbar" id="mynavbar">
+  <div class="navbar">
     <a class="active" href="index.html">Home</a>
     <a href="second_page.html">Gourd Galore</a>
     <a href="third_page.html">Cultural Significance</a>
     <a href="fourth_page.html">Pumpkin Trivia</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
   </div>
 
   <div class="pumpkins"></div>
@@ -36,17 +33,6 @@
   <footer>
     <p>Copyright © 2020 • J4502 Fall 2020 • <a href="mailto:jcpfmc@mail.missouri.edu">Contact</a></p>
   </footer>
-
-  <script>
-    function myFunction() {
-      var x = document.getElementById("mynavbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-  </script>
 
 </body>
 </html>
