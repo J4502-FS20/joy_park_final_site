@@ -38,6 +38,8 @@ a:link {
   color: white;
 }
 
+/* referenced code from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -48,10 +50,6 @@ a:link {
   top: 0;
   left: 0;
   width: 100%;
-}
-
-.navbar li {
-  float: left;
 }
 
 .navbar a {

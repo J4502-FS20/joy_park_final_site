@@ -14,12 +14,24 @@
 
 <body>
 
-  <ul class="navbar">
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="second_page.html">Gourd Galore</a></li>
-    <li><a href="third_page.html">Cultural Significance</a></li>
-    <li><a href="fourth_page.html">Pumpkin Trivia</a></li>
-  </ul>
+  <div class="navbar" id="mynavbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="second_page.html">Gourd Galore</a>
+    <a href="third_page.html">Cultural Significance</a>
+    <a href="fourth_page.html">Pumpkin Trivia</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 
   <div class="pumpkins"></div>
 
