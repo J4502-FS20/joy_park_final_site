@@ -112,3 +112,9 @@ img {
 .hideThisDiv {
   display: none;
 }
+
+#credit {
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: right;
+}
