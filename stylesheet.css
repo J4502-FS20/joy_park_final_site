@@ -1,4 +1,5 @@
 body, html {
+  display: flex;
   font-family: 'Roboto', sans-serif;
   background-color: #4E2318;
   height: 100%;
@@ -77,4 +78,37 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+/* styling for photo gallery */
+
+.imageGallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.imageHolder {
+  margin: 20px 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.imageHolder caption {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.button_holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hideThisDiv {
+  display: none;
 }
