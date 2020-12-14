@@ -14,20 +14,28 @@
 
 <body>
 
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a class="active" href="second_page.html">Gourd Galore</a>
-    <a href="third_page.html">Cultural Significance</a>
-    <a href="fourth_page.html">Pumpkin Trivia</a>
+  <div class="container">
+    <div class="item">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="item active">
+      <a href="second_page.html">History</a>
+    </div>
+    <div class="item">
+      <a href="third_page.html">Cultural Significance</a>
+    </div>
+    <div class="item">
+      <a href="fourth_page.html">Quiz</a>
+    </div>
   </div>
 
-  <div class="pumpkins"></div>
-
-  <div class="main">
+  <div class="main" id="center">
     <h1>Gourd Galore</h1>
     <h2>History and overview of pumpkins</h2>
     <p>Interact with the timeline to learn how the cultural phenomenon of pumpkins in America evolved over time. Interactive timeline courtesy of Timeline JS by Knight Lab.</p>
-    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1KYaa5k1Tfq7rc1XswxMMJoT8SatsWPpR0B0ggKINFvI&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    <div>
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1KYaa5k1Tfq7rc1XswxMMJoT8SatsWPpR0B0ggKINFvI&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </div>
   </div>
 
   <footer>
