@@ -136,7 +136,7 @@ img {
   line-height: 0;
 }
 
-#credit {
+.credit {
   font-size: 0.8rem;
   font-style: italic;
   text-align: center;
