@@ -9,7 +9,9 @@
   <meta name="author" content="Joy Park">
   <meta name="keywords" content="Joy Park, J4502, Final Project"/>
   <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
   <script src="photo_gallery.js" defer></script>
+  <script src="graph.js" defer></script>
 
 </head>
 
@@ -20,13 +22,13 @@
       <a href="index.html">Home</a>
     </div>
     <div class="item">
-      <a href="second_page.html">History</a>
+      <a href="timeline.html">Timeline</a>
     </div>
     <div class="item active">
-      <a href="third_page.html">Cultural Significance</a>
+      <a href="significance.html">Cultural Significance</a>
     </div>
     <div class="item">
-      <a href="fourth_page.html">Quiz</a>
+      <a href="trivia.html">Trivia</a>
     </div>
   </div>
 
@@ -97,17 +99,22 @@ are embedded in American culture</h2>
       		 <figcaption>Morton, Illinois is the self-proclaimed pumpkin capital of the world. Illinois is one of the largest producers of pumpkin in the United States with 90 to 95 percent of its crop being used for processed pumpkin foods.</figcaption>
       	</section>
       	<section class="button_holder">
-      		<button class="button" id="button_previous">Previous</button>
-      		<button class="button" id="button_random">Random</button>
-      		<button class="button" id="button_next">Next</button>
+      		<button id="button_previous">Previous</button>
+          <p id="stepper"></p>
+      		<button id="button_next">Next</button>
       	</section>
       </section>
     </div>
 
+    <h2>Acres of Pumpkin Harvested</h2>
+
+    <div id="body">
+      <div id="chart_container"></div>
+    </div>
   </div>
 
   <footer>
-    <p>Copyright © 2020 • J4502 Fall 2020 • <a href="mailto:jcpfmc@mail.missouri.edu">Contact</a> • <a href="fifth_page.html">Sources</a></p>
+    <p>Copyright © 2020 • J4502 Fall 2020 • <a href="mailto:jcpfmc@mail.missouri.edu">Contact</a> • <a href="sources.html">Sources</a></p>
   </footer>
 
 </body>

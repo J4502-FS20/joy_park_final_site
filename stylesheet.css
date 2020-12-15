@@ -6,7 +6,7 @@ body, html {
 }
 
 h1 {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 3.125em;
   line-height: 1.1;
   color: #e2961d;
@@ -22,7 +22,7 @@ p {
 }
 
 a {
-  color: white;
+  color: #fff;
 }
 
 .pumpkins {
@@ -91,6 +91,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  display: inline;
 }
 
 /* styling for photo gallery */
@@ -98,7 +99,7 @@ footer {
 #body {
   display: flex;
   justify-content: center;
-
+  margin: 50px;
 }
 
 .imageGallery {
@@ -109,10 +110,9 @@ footer {
 }
 
 .imageHolder {
-  margin: 20px 0;
+  /* margin: 20px 0; */
   font-family: "Helvetica", "Arial", sans-serif;
   text-align: center;
-
 }
 
 .imageHolder caption {
@@ -128,10 +128,15 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .hideThisDiv {
   display: none;
+}
+
+#stepper {
+  line-height: 0;
 }
 
 #credit {
@@ -140,16 +145,86 @@ img {
   text-align: center;
 }
 
-.button {
+button {
   background-color: #e2961d;
   border: none;
   color: white;
-  width: 100px;
-  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
-  font-size: 0.7rem;
-  margin: 4px 2px;
+  font-weight: bold;
+  display: block;
   cursor: pointer;
-  border-radius: 3px;
+  width: 100px;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+}
+
+/* quiz formatting */
+
+form {
+  margin: 0 2rem 2rem;
+  box-sizing: border-box;
+  border: 2px solid #E2961D;
+  border-radius: 10px;
+  padding: 1rem 2rem 2rem 2rem;
+  color: #fff;
+}
+
+.answers {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.answers span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#submit {
+  margin: 2rem auto;
+}
+
+/* graph */
+
+/* #chart_container {
+  margin: 50px;
+} */
+
+.row {
+	margin-bottom: 0.2em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px dotted #bbb;
+	width: 100%;
+	float: left;
+}
+
+.Year {
+  margin: 0 1em 0.2em 0;
+	float: left;
+	font-size: 0.9em;
+}
+
+.Value {
+	float: left;
+	display: inline;
+	margin-right: 1.5%;
+  background: #ccc;
+  height: 20px;
+}
+
+.ValueNumber {
+	margin-bottom: 0.2em;
+	float: left;
+	font-size: 0.9em;
+	display: inline;
+}
+
+@media only screen and (min-width: 600px) {
+  .Name {
+    width: 140px;
+  }
+}
+
+#answerTally {
+  color: #000;
 }
