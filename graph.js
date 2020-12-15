@@ -25,7 +25,7 @@ var largest = Math.max.apply(Math, arrayValues);
 for (var i = 0; i < data.length; i++) {
   chartDiv.innerHTML += '<div class="row" id="r' + i + '">' +
       '<div class="Year">' + data[i].Year + '</div>' +
-      '<div class="Value" style="width:' + (data[i].Value * 50) / largest + '%"></div>' +
+      '<div class="Value" style="width:' + (data[i].Value * 60) / largest + '%"></div>' +
       '<div class="ValueNumber">' + data[i].Value + '</div>' +
       '</div>'
 }
