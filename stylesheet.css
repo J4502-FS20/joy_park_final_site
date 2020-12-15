@@ -3,6 +3,7 @@ body, html {
   background-color: #4E2318;
   height: 100%;
   margin: 0;
+  color: #fff;
 }
 
 h1 {
@@ -26,42 +27,55 @@ a {
 }
 
 .pumpkins {
-  background-image: url("img/mini_pumpkins.jpg");
-  opacity: 0.2;
+  background-image: url("img/mini_pumpkins2.png");
+  width: 100%;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  /* position: relative; */
 }
 
-.pumpkins-main {
-  position: absolute;
+#pumpkins-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 100px;
+  /* text-align: center; */
+  /* position: absolute;
+  float: left;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  /* width: 50%;
+  height: 50%;
+  float: left; */
+}
+
+@media (max-width: 600px) {
+	#pumpkins-main h1 {
+		text-align: left;
+	}
 }
 
 .main {
-  padding: 50px;
-  color: white;
+  padding: 0 50px;
 }
 
 /* navbar code */
 
-.container {
+.navcontainer {
   display: flex;
   flex-direction: column;
   text-align: center;
 	background: #575638;
 }
 
-.container a {
+.navcontainer a {
   text-decoration: none;
 }
 
-.container div:hover {
+.navcontainer div:hover {
     background: #45442d;
     text-decoration: underline;
     transition-duration: 0.3s;
@@ -77,14 +91,13 @@ a {
 }
 
 @media (min-width: 600px) {
-	.container {
+	.navcontainer {
 		flex-direction: row;
 		justify-content: center;
 	}
 }
 
 footer {
-  color: white;
   padding: 10px;
   font-size: 12px;
   text-align: center;
@@ -99,7 +112,7 @@ footer {
 #body {
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 .imageGallery {
@@ -131,6 +144,13 @@ img {
   margin-top: 1rem;
 }
 
+.button_holder2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
 .hideThisDiv {
   display: none;
 }
@@ -148,7 +168,7 @@ img {
 button {
   background-color: #e2961d;
   border: none;
-  color: white;
+  color: #000;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -157,31 +177,6 @@ button {
   width: 100px;
   padding: 0.8rem 1rem;
   border-radius: 5px;
-}
-
-/* quiz formatting */
-
-form {
-  margin: 0 2rem 2rem;
-  box-sizing: border-box;
-  border: 2px solid #E2961D;
-  border-radius: 10px;
-  padding: 1rem 2rem 2rem 2rem;
-  color: #fff;
-}
-
-.answers {
-  text-align: center;
-  font-size: 1.6rem;
-}
-
-.answers span {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-#submit {
-  margin: 2rem auto;
 }
 
 /* graph */
@@ -208,7 +203,7 @@ form {
 	float: left;
 	display: inline;
 	margin-right: 1.5%;
-  background: #ccc;
+  background: #e2961d;
   height: 20px;
 }
 
@@ -225,6 +220,42 @@ form {
   }
 }
 
-#answerTally {
-  color: #000;
+/* quiz formatting */
+
+.question {
+  margin: 0 2rem 2rem;
+  box-sizing: border-box;
+  border: 2px solid #E2961D;
+  border-radius: 10px;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+/* form {
+  margin: 0 2rem 2rem;
+  box-sizing: border-box;
+  border: 2px solid #E2961D;
+  border-radius: 10px;
+  padding: 1rem 2rem 2rem 2rem;
+} */
+
+.answers {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.answers span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#submit {
+  margin: 2rem auto;
+}
+
+#message {
+  text-align: center;
+}
+
+#text {
+  text-align: center;
 }

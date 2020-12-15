@@ -1,51 +1,63 @@
-"use strict";
+function check(){
 
-var radios = document.getElementsByTagName('input');
+  var q1 = document.quiz.q1.value;
+  var q2 = document.quiz.q2.value;
+  var q3 = document.quiz.q3.value;
+  var q4 = document.quiz.q4.value;
+  var q5 = document.quiz.q5.value;
+  var q6 = document.quiz.q6.value;
+  var q7 = document.quiz.q7.value;
+  var q8 = document.quiz.q8.value;
+  var correct = 0;
 
-var correctAnswers = ["real", "real", "fake", "real", "fake", "real", "real", "real"];
-
-var numberOfCorrectAnswers;
-
-var submitButton = document.getElementById("submit");
-
-var answerElement = document.getElementById("answerTally");
-
-submitButton.addEventListener('click', function() {
-
-  console.clear();
-
-  numberOfCorrectAnswers = 0;
-  for (var i = 0; i < radios.length; i++) {
-      if (radios[i].type === 'radio' && radios[i].checked) {
-          // get value, set checked flag or do whatever you need to
-          if (correctAnswers.indexOf(radios[i].value) > - 1) {
-            console.log(radios[i].value + " is correct");
-            numberOfCorrectAnswers += 1;
-          }
-      }
+  if(q1 == "real"){
+    correct++;
   }
-  console.log(this);
-  answerElement.innerHTML = "You got <span>" + numberOfCorrectAnswers + "</span> correct!";
 
-});
+  if(q2 == "real"){
+    correct++;
+  }
 
-// for (var i = 0; i < radios.length; i++) {
-//   radios[i].addEventListener('change', function() {
-//     this.parentElement.style.background = "red";
-//     console.log("A radio button has been selected!");
-//   });
-// }
+  if(q3 == "fake"){
+    correct++;
+  }
 
-function mySquare(x){
-  return x*x;
+  if(q4 == "real"){
+    correct++;
+  }
+
+  if(q5 == "fake"){
+    correct++;
+  }
+
+  if(q6 == "real"){
+    correct++;
+  }
+
+  if(q7 == "real"){
+    correct++;
+  }
+
+  if(q8 == "real"){
+    correct++;
+  }
+
+  var messages = ["Awesome job!", "You're getting there!", "Keep trying!"];
+
+  var range;
+
+    if (correct > 6){
+      range = 0;
+    }
+
+    if (correct > 4 && correct < 7){
+      range = 1;
+    }
+
+    if (correct < 5){
+      range = 2;
+    }
+
+  document.getElementById("results").style.visibility = "visible";
+  document.getElementById("message").innerHTML = messages[range] + " You got " + correct + " correct.";
 }
-
-function divide(x,y){
-  return x/y;
-}
-
-function checkRadios(){
-  console.log(radios.length);
-}
-
-checkRadios();

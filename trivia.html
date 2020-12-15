@@ -16,7 +16,7 @@
 
 <body>
 
-  <div class="container">
+  <div class="navcontainer">
     <div class="item">
       <a href="index.html">Home</a>
     </div>
@@ -24,96 +24,93 @@
       <a href="timeline.html">Timeline</a>
     </div>
     <div class="item">
-      <a href="third_page.html">Cultural Significance</a>
+      <a href="significance.html">Cultural Significance</a>
     </div>
     <div class="item active">
-      <a href="fourth_page.html">Trivia</a>
+      <a href="trivia.html">Trivia</a>
     </div>
   </div>
 
   <div class="main" id="center">
     <h1>Pumpkin Spice Trivia</h1>
-    <h2>How well do you know your pumpkin spiced products? Take this quiz to find out!</h2>
+    <h2>How well do you know your pumpkin spice products? Take this quiz to find out!</h2>
   </div>
 
-  <form>
-	   <h3><p id="q1"></p>Pumpkin spice Spam</h3>
-	   <div><input id="real" type="radio" name="q1" value="real">
-	   <label for="real">Real</label></div>
+  <form id="quiz" name="quiz">
 
-	   <div><input id="fake" type="radio" name="q1" value="fake">
-	   <label for="fake">Fake</label></div>
-	</form>
+     <div class="question">
+  	   <p>Pumpkin spice Spam</p>
+  	   <input id="mc1" type="radio" name="q1" value="real">
+  	   <label for="real">Real</label>
+  	   <input id="mc2" type="radio" name="q1" value="fake">
+  	   <label for="fake">Fake</label>
+     </div>
 
-	<form>
-	   <h3><p id="q2"></p>Pumpkin spice kale chips</h3>
-     <div><input id="real" type="radio" name="q2" value="real">
-	   <label for="real">Real</label></div>
+     <div class="question">
+  	   <p>Pumpkin spice kale chips</p>
+       <input id="mc1" type="radio" name="q2" value="real">
+  	   <label for="real">Real</label>
+  	   <input id="mc2" type="radio" name="q2" value="fake">
+  	   <label for="fake">Fake</label>
+     </div>
 
-	   <div><input id="fake" type="radio" name="q2" value="fake">
-	   <label for="fake">Fake</label></div>
-	</form>
+     <div class="question">
+  	   <p>Pumpkin spice Gatorade</p>
+       <input id="mc1" type="radio" name="q3" value="real">
+  	   <label for="real">Real</label>
+  	   <input id="mc2" type="radio" name="q3" value="fake">
+  	   <label for="fake">Fake</label>
+     </div>
 
-	<form>
-	   <h3><p id="q3"></p>Pumpkin spice Gatorade</h3>
-     <div><input id="real" type="radio" name="q3" value="real">
-	   <label for="real">Real</label></div>
+     <div class="question">
+       <p>Pumpkin spice butter</p>
+       <input id="mc1" type="radio" name="q4" value="real">
+  	   <label for="real">Real</label>
+  	   <input id="mc2" type="radio" name="q4" value="fake">
+  	   <label for="fake">Fake</label>
+     </div>
 
-	   <div><input id="fake" type="radio" name="q3" value="fake">
-	   <label for="fake">Fake</label></div>
-	</form>
+     <div class="question">
+       <p>Pumpkin spice Listerine</p>
+       <input id="mc1" type="radio" name="q5" value="real">
+  	   <label for="real">Real</label>
+  	   <input id="mc2" type="radio" name="q5" value="fake">
+  	   <label for="fake">Fake</label>
+     </div>
 
-  <form>
-     <h3><p id="q4"></p>Pumpkin spice butter</h3>
-     <div><input id="real" type="radio" name="q4" value="real">
-     <label for="real">Real</label></div>
+     <div class="question">
+       <p>Pumpkin spice chicken sausage</p>
+       <input id="mc1" type="radio" name="q6" value="real">
+  	   <label for="real">Real</label>
+  	   <input id="mc2" type="radio" name="q6" value="fake">
+  	   <label for="fake">Fake</label>
+     </div>
 
-     <div><input id="fake" type="radio" name="q4" value="fake">
-     <label for="fake">Fake</label></div>
+     <div class="question">
+       <p>Kraft pumpkin spice macaroni & cheese</p>
+       <input id="mc1" type="radio" name="q7" value="real">
+  	   <label for="real">Real</label>
+  	   <input id="mc2" type="radio" name="q7" value="fake">
+  	   <label for="fake">Fake</label>
+     </div>
+
+     <div class="question">
+       <p>Pumpkin spice deodorant</p>
+       <input id="mc1" type="radio" name="q8" value="real">
+  	   <label for="real">Real</label>
+  	   <input id="mc2" type="radio" name="q8" value="fake">
+  	   <label for="fake">Fake</label>
+    </div>
   </form>
 
-  <form>
-     <h3><p id="q5"></p>Pumpkin spice Listerine</h3>
-     <div><input id="real" type="radio" name="q5" value="real">
-     <label for="real">Real</label></div>
+  <div id="results">
+    <p id="message"></p>
+  </div>
 
-     <div><input id="fake" type="radio" name="q5" value="fake">
-     <label for="fake">Fake</label></div>
-  </form>
-
-  <form>
-     <h3><p id="q6"></p>Pumpkin spice chicken sausage</h3>
-     <div><input id="real" type="radio" name="q6" value="real">
-     <label for="real">Real</label></div>
-
-     <div><input id="fake" type="radio" name="q6" value="fake">
-     <label for="fake">Fake</label></div>
-  </form>
-
-  <form>
-     <h3><p id="q7"></p>Kraft pumpkin Spice Macaroni & Cheese</h3>
-     <div><input id="real" type="radio" name="q7" value="real">
-     <label for="real">Real</label></div>
-
-     <div><input id="fake" type="radio" name="q7" value="fake">
-     <label for="fake">Fake</label></div>
-  </form>
-
-  <form>
-     <h3><p id="q8"></p>Pumpkin spice deodorant</h3>
-     <div><input id="real" type="radio" name="q8" value="real">
-     <label for="real">Real</label></div>
-
-     <div><input id="fake" type="radio" name="q8" value="fake">
-     <label for="fake">Fake</label></div>
-  </form>
-
-  <button id="submit">Submit</button>
-
-  <p class="answers" id="answerTally"></p>
+  <button id="submit" onclick="check();">Submit</button>
 
   <footer>
-    <p>Copyright © 2020 • J4502 Fall 2020 • <a href="mailto:jcpfmc@mail.missouri.edu">Contact</a> • <a href="sources.html">Sources</a></p>
+    <p>Copyright © 2020 • J4502 Fall 2020 • <a href="mailto:jcpfmc@mail.missouri.edu">Contact</a></p>
   </footer>
 
 </body>
