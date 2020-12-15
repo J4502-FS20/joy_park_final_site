@@ -222,12 +222,28 @@ button {
 
 /* quiz formatting */
 
-.question {
+/* .question {
   margin: 0 2rem 2rem;
   box-sizing: border-box;
   border: 2px solid #E2961D;
   border-radius: 10px;
   padding: 1rem 2rem 2rem 2rem;
+} */
+
+#quiz {
+  margin: 0 100px;
+  text-align: center;
+}
+
+fieldset {
+    padding: 15px;
+    margin: 20px;
+    border: 2px solid #e2961d;
+    border-radius: 5px;
+}
+
+fieldset legend {
+  padding: 0 15px;
 }
 
 /* form {
