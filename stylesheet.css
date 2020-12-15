@@ -79,20 +79,18 @@ a {
   background: #45442d;
   font-weight: bold;
   transition-duration: 0.3s;
-  color: #e2961d;
 }
 
 .navcontainer a:hover {
-    color: #e2961d;
+  color: #EFC481;
 }
 
 .active {
   font-weight: bold;
-  color: #e2961d;
 }
 
 .active a {
-    color: #e2961d;
+    color: #EFC481;
 }
 
 .item {
