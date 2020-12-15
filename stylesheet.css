@@ -76,14 +76,13 @@ a {
 }
 
 .navcontainer div:hover {
-    background: #45442d;
-    text-decoration: underline;
-    transition-duration: 0.3s;
-
+  background: #45442d;
+  font-weight: bold;
+  transition-duration: 0.3s;
 }
 
 .active {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .item {
