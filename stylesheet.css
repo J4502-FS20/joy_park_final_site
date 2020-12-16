@@ -120,6 +120,7 @@ footer {
 }
 
 .caption {
+  font-size: 1rem;
   text-align: center;
   margin-bottom: 20px;
 }
