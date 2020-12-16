@@ -42,7 +42,7 @@ function check(){
     correct++;
   }
 
-  var messages = ["Awesome job!", "You're getting there!", "Keep trying!"];
+  var messages = ["Awesome job! You're officially a pumpkin spice connoisseur.", "You're getting there!", "Keep trying! You'll be a pumpkin spice expert in no time."];
 
   var range;
 
