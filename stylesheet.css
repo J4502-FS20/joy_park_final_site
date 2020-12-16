@@ -10,7 +10,7 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3.125em;
   line-height: 1.1;
-  color: #e2961d;
+  color: #EFC481;
   text-align: center;
 }
 
@@ -143,7 +143,7 @@ img {
 }
 
 button {
-  background-color: #e2961d;
+  background-color: #EFC481;
   border: none;
   color: #000;
   text-align: center;
@@ -183,7 +183,7 @@ button {
 	float: left;
 	display: inline;
 	margin-right: 1.5%;
-  background: #e2961d;
+  background: #EFC481;
   height: 20px;
 }
 
@@ -204,7 +204,7 @@ button {
 fieldset {
     padding: 15px;
     margin: 20px;
-    border: 2px solid #e2961d;
+    border: 2px solid #EFC481;
     border-radius: 5px;
 }
 
